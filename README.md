@@ -55,7 +55,7 @@ Edit the `main.tf` and add the following:
 
 ```bash
 resource "aws_instance" "ec2_ubuntu" {
-  instance_type="t2.micro"
+  instance_type = "t2.micro"
   ami = "ami-06b5810be11add0e2"
 }
 ```
@@ -93,7 +93,6 @@ provider "google" {
 
 Now try to run `terraform plan`. Notice, that it will not run due to the fact that we've defined a new provider but haven't initialised it's terraform libraries.
 Run `terraform init` again.
-
 
 ### 5. Add GCP instance configuration
 
@@ -177,11 +176,6 @@ output "gcp_ip" {
 Don't forget to destroy your demo instances.
 Issue the following command `terraform destroy` to clean the AWS and the Google Cloud providers.
 
-## Survey
-
-Please help us improve by filling this survey out. Only takes about 2 minutes, and your help is greatly appreciated:
-/////// SURVEY LINK ///////
-
 ## Useful links
 
-* 
+* https://www.terraform.io/docs/providers/index.html

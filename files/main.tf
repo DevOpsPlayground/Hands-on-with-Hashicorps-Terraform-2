@@ -1,7 +1,7 @@
 // AWS AMI ID: ami-06b5810be11add0e2
 
 resource "aws_instance" "ec2_ubuntu" {
-  instance_type="t2.micro"
+  instance_type = "t2.micro"
   ami = "ami-06b5810be11add0e2"
   tags {
     Name = "aws-${var.serial_no}"
